@@ -35,8 +35,8 @@
 
 
 				</li>
-				<li class="nav-item"><a href="" class="nav-link fw-bold text-light text-uppercase">About</a></li>
-				<li class="nav-item"><a href="" class="nav-link fw-bold text-light text-uppercase">Product</a></li>
+				<li class="nav-item"><a href="#team" class="nav-link fw-bold text-light text-uppercase">About</a></li>
+				<li class="nav-item"><a href="#contact" class="nav-link fw-bold text-light text-uppercase">Product</a></li>
 			</ul>
 
 		<form class="px-3" action="" method="">
@@ -341,6 +341,12 @@
 	<footer class="bg-secondary p-2">
 		<div class="container-fluid">
 			<div class="col-12 text-center">
+
+				<!-- start elfsight.com for viber -->
+				<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+				<div class="elfsight-app-f39b2220-5e9d-47fe-93fb-b12949f096cb"></div>
+				<!-- end elfsight.com for viber -->
+
 				<h3 class="text-light text-uppercase fw-light">Knowledge Sharing Project</h3>
 				<h5 class="text-light fw-light fst-italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
 				<div>
@@ -350,7 +356,7 @@
 					<a href="#" target="_blank"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
 				</div>
 
-				<p class="text-light">&#x000a9;Copyright <span id="year"></span> 2020 - Made by DLT Co.,Ltd</p>
+				<p class="text-light">&#x000a9;Copyright <span id="year"></span> - Made by DLT Co.,Ltd</p>
 			</div>
 		</div>
 	</footer>
@@ -358,15 +364,36 @@
 
 
 	<!-- Start Modal Area -->
+
+	<!--standard size
+	modal-xl
+	modal-lg
+	modal-md
+	modal-sm
+	-->
+
+	<!--full size
+	modal-fullscreen
+	modal-fullscreen-sm-down
+	modal-fullscreen-md-down
+	modal-fullscreen-lg-down
+	modal-fullscreen-xl-down
+	modal-fullscreen-xxl-down
+	-->
+
 	
 	<!-- start login modal -->
 	<div class="modal" id="loginmodal">
-		<div class="modal-dialog">
-			<div class="modal-header">
-				<h5 class="modal-title">Login Here</h5>
-			</div>
-			<div class="modal-body">
-				<div class="col-12">
+		<div class="modal-dialog modal-dialog-centered modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Login Here</h5>
+					<button class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+
+				<div class="modal-body">
+				<form>
+					<div class="col-12">
 					<form action="" method="">
 						<div class="form-group">
 							<label for="email">Email</label>
@@ -382,12 +409,14 @@
 						</div>
 					</form>
 				</div>
-			</div>
+			</form>
+		</div>
 			<div class="modal-footer">
 				<p>Not Registered !, <a href="#">Signup Here</a></p>
 			</div>
 		</div>
 	</div>
+</div>
 	<!-- end login modal -->
 
 
